@@ -9,7 +9,7 @@ import {
   Marker,
 } from "react-simple-maps"
 import { Motion, spring } from "react-motion"
- import map from "./static/world-110m.json"
+ import map from "./static/world-50m.json"
 
 const wrapperStyles = {
   width: "100%",
@@ -61,6 +61,9 @@ class AnimatedMap extends Component {
       zoom: 1,
     })
   }
+  log(e) {
+    console.log(e)
+  }
   render() {
     return (
       <div style={wrapperStyles}>
@@ -101,6 +104,7 @@ class AnimatedMap extends Component {
                     geographies.map((geography, i) => geography.id !== "010" && (
                       <Geography
                         key={i}
+                        onClick={(e) => this.log(geography)}
                         geography={geography}
                         projection={projection}
                         style={{
