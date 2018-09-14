@@ -58,7 +58,7 @@ class AnimatedMap extends Component {
       zoom: 1
     });
   }
-  log = e => {
+  countryClick = e => {
       this.setState({
           visible: true,
           country: e.properties.name
@@ -107,7 +107,7 @@ class AnimatedMap extends Component {
                         geography.id !== "010" && (
                           <Geography
                             key={i}
-                            onClick={e => this.log(geography)}
+                            onClick={e => this.countryClick(geography)}
                             geography={geography}
                             projection={projection}
                             style={{
