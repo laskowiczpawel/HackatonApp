@@ -13,6 +13,9 @@ import map from "../../static/world-50m.json"
 import { wrapperStyles, cities } from "./config";
 import { Modal, Button } from "antd";
 
+import { Link } from "react-router-dom";
+
+
 class AnimatedMap extends Component {
   constructor() {
     super();
@@ -28,9 +31,12 @@ class AnimatedMap extends Component {
 
   state = { visible: false, country: null };
 
+  handleOk = e => {
+      console.log(e)
+  }
+
 
   handleCancel = e => {
-    console.log(e);
     this.setState({
       visible: false
     });
@@ -67,13 +73,17 @@ class AnimatedMap extends Component {
   render() {
     return (
       <div style={wrapperStyles}>
-      <Modal
+          <Modal
             title="Basic Modal"
+            width="200"
             visible={this.state.visible}
             onOk={this.handleOk}
             onCancel={this.handleCancel}>
                     <p>{this.state.country}</p>
-        </Modal>
+                    <Link to={`/quiz/${this.state.country}`}>Zacznij quiz</Link>
+
+            </Modal>
+      
         <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
         <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
         <button onClick={this.handleReset}>{"Reset"}</button>
