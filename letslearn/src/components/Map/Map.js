@@ -11,7 +11,7 @@ import {
 import { Motion, spring } from "react-motion"
 import map from "../../static/world-50m.json"
 import { wrapperStyles, cities } from "./config";
-
+import Modal from "../Modal/Modal"
 
 class AnimatedMap extends Component {
     constructor() {
@@ -53,6 +53,7 @@ class AnimatedMap extends Component {
     render() {
         return (
             <div style={wrapperStyles}>
+            <Modal />
                 <button onClick={this.handleZoomIn}>
                     {"Zoom in"}
                 </button>
