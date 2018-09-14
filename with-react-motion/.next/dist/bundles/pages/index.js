@@ -73,32 +73,29 @@ module.exports =
 /******/ ({
 
 /***/ "./pages/index.js":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__ = __webpack_require__("react-simple-maps");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_simple_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_simple_maps__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_motion__ = __webpack_require__("react-motion");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_motion___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_motion__);
+var _jsxFileName = "C:\\Users\\User\\VSCProjects\\Hackaton\\HackatonApp\\with-react-motion\\pages\\index.js";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("react");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactSimpleMaps = __webpack_require__("react-simple-maps");
-
-var _reactMotion = __webpack_require__("react-motion");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
 
 var wrapperStyles = {
   width: "100%",
@@ -162,26 +159,42 @@ var AnimatedMap = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return _react2.default.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
-        { style: wrapperStyles },
-        _react2.default.createElement(
+        { style: wrapperStyles, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 65
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "button",
-          { onClick: this.handleZoomIn },
+          { onClick: this.handleZoomIn, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 66
+            }
+          },
           "Zoom in"
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "button",
-          { onClick: this.handleZoomOut },
+          { onClick: this.handleZoomOut, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 69
+            }
+          },
           "Zoom out"
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "button",
-          { onClick: this.handleReset },
+          { onClick: this.handleReset, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 72
+            }
+          },
           "Reset"
         ),
-        _react2.default.createElement(
-          _reactMotion.Motion,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_react_motion__["Motion"],
           {
             defaultStyle: {
               zoom: 1,
@@ -189,17 +202,21 @@ var AnimatedMap = function (_Component) {
               y: 20
             },
             style: {
-              zoom: (0, _reactMotion.spring)(this.state.zoom, { stiffness: 210, damping: 20 }),
-              x: (0, _reactMotion.spring)(this.state.center[0], { stiffness: 210, damping: 20 }),
-              y: (0, _reactMotion.spring)(this.state.center[1], { stiffness: 210, damping: 20 })
+              zoom: Object(__WEBPACK_IMPORTED_MODULE_2_react_motion__["spring"])(this.state.zoom, { stiffness: 210, damping: 20 }),
+              x: Object(__WEBPACK_IMPORTED_MODULE_2_react_motion__["spring"])(this.state.center[0], { stiffness: 210, damping: 20 }),
+              y: Object(__WEBPACK_IMPORTED_MODULE_2_react_motion__["spring"])(this.state.center[1], { stiffness: 210, damping: 20 })
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 75
             }
           },
           function (_ref) {
             var zoom = _ref.zoom,
                 x = _ref.x,
                 y = _ref.y;
-            return _react2.default.createElement(
-              _reactSimpleMaps.ComposableMap,
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["ComposableMap"],
               {
                 projectionConfig: { scale: 205 },
                 width: 980,
@@ -207,17 +224,29 @@ var AnimatedMap = function (_Component) {
                 style: {
                   width: "100%",
                   height: "auto"
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 88
                 }
               },
-              _react2.default.createElement(
-                _reactSimpleMaps.ZoomableGroup,
-                { center: [x, y], zoom: zoom },
-                _react2.default.createElement(
-                  _reactSimpleMaps.Geographies,
-                  { geography: "/static/world-110m.json" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["ZoomableGroup"],
+                { center: [x, y], zoom: zoom, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 97
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["Geographies"],
+                  { geography: "/static/world-110m.json", __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 98
+                    }
+                  },
                   function (geographies, projection) {
                     return geographies.map(function (geography, i) {
-                      return geography.id !== "010" && _react2.default.createElement(_reactSimpleMaps.Geography, {
+                      return geography.id !== "010" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["Geography"], {
                         key: i,
                         geography: geography,
                         projection: projection,
@@ -240,28 +269,45 @@ var AnimatedMap = function (_Component) {
                             strokeWidth: 0.75,
                             outline: "none"
                           }
+                        },
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 101
                         }
                       });
                     });
                   }
                 ),
-                _react2.default.createElement(
-                  _reactSimpleMaps.Markers,
-                  null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["Markers"],
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 128
+                    }
+                  },
                   cities.map(function (city, i) {
-                    return _react2.default.createElement(
-                      _reactSimpleMaps.Marker,
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_react_simple_maps__["Marker"],
                       {
                         key: i,
                         marker: city,
-                        onClick: _this2.handleCityClick
+                        onClick: _this2.handleCityClick,
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 130
+                        }
                       },
-                      _react2.default.createElement("circle", {
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("circle", {
                         cx: 0,
                         cy: 0,
                         r: 6,
                         fill: "#FF5722",
-                        stroke: "#DF3702"
+                        stroke: "#DF3702",
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 135
+                        }
                       })
                     );
                   })
@@ -275,9 +321,9 @@ var AnimatedMap = function (_Component) {
   }]);
 
   return AnimatedMap;
-}(_react.Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-exports.default = AnimatedMap;
+/* harmony default export */ __webpack_exports__["default"] = (AnimatedMap);
 
 /***/ }),
 
