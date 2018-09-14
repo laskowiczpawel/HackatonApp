@@ -1,4 +1,3 @@
-import { Modal, Button } from 'antd';
 import React from "react"
 
 export default class MapModal extends React.Component {
