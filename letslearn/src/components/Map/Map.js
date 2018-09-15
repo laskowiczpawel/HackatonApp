@@ -43,6 +43,15 @@ class AnimatedMap extends Component {
     });
   };
 
+  scroll(e) {
+    e.preventDefault()
+    let y = e.movementY * 0.01
+    this.setState((state) => ({
+      zoom: state.zoom + y
+    })
+  )
+  }
+
   handleZoomIn() {
     this.setState({
       zoom: this.state.zoom * 2
@@ -73,7 +82,7 @@ class AnimatedMap extends Component {
   }
   render() {
     return (
-      <div style={wrapperStyles}>
+      <div style={wrapperStyles} onWheel={e => this.scroll(e)}>
           <Modal
             title={this.state.country}
             width={500}
