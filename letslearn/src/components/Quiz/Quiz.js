@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MainFrame from "../MainFrame/MainFrame.jsx"
 
 export default class Quiz extends Component {
 
@@ -7,7 +8,7 @@ export default class Quiz extends Component {
     render() {
         return (
             <div>
-                {this.props.match.params.country}
+                <MainFrame />
             </div>
         )
     }
