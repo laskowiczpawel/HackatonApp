@@ -16,7 +16,9 @@ class MakeCardItem extends Component {
 
     render() {
         return (
-            <div style={{background: this.state.isActive ? 'orange' : null}} className="card" key={this.props.name} onClick={() => this.activateItem()}>
+            <div style={{
+                background: this.state.isActive ? 'orange' : null, height: '100%', width: '100%', display: 'flex',
+                justifyContent: 'center', alignItems: 'center'}} className="card" key={this.props.name} onClick={() => this.activateItem()}>
                 <div className="front">
                     {this.props.name}
                 </div>

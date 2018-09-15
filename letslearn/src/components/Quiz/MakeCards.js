@@ -10,20 +10,16 @@ class MakeCards extends Component {
         this.secondAnsw = '';
         this.firstAnswKey = '';
         this.secondAnswKey = '';
-        this.state = { isToggleOn: true };
+        this.correctAnswers = 0;
+        this.state = { 
+            isToggleOn: true,
+            resetToogle: false
+        };
         this.appendCards();
     }
 
     appendCards() {
         this.props.cards.map((item) => {
-            var style = {
-                'background-color': 'none'
-            };
-            if (this.state.isToggleOn) {
-                style = {
-                    'background-color': '#D3D3D3'
-                };
-            }
             this.cards.push(
             <GridItem>
                 <MakeCardItem name={item.native} diff={item.native} toggleOn={() => this.checkCards(item.native, item.native)} />
@@ -70,6 +66,12 @@ class MakeCards extends Component {
     compareAnswers() {
         if (this.firstAnsw === this.secondAnsw) {
             console.log('correct answ');
+            this.correctAnswers += 2;
+            console.log(this.correctAnswers);
+            this.firstAnsw = '';
+            this.secondAnsw = '';
+            this.secondAnswKey = '';
+            this.firstAnswKey = '';
         } else {
             console.log('wrong answer');
             this.firstAnsw = '';
