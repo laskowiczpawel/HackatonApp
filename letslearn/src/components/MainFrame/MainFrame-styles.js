@@ -34,6 +34,7 @@ export const GridContainer = styled.div`
 
 export const GridItem1 = styled.div`
     background: ${props => `url(${props.background}) no-repeat center left`}; 
+    background-size:cover;
     position: relative;
     width: 50vw;
     height: 50vh;
@@ -43,12 +44,18 @@ export const GridItem1 = styled.div`
         top: 15px;
         left: 15px;
         position: absolute;
-        background-color: red;
+
+        border: 2px solid;
+        background-color: #ff9600c9;
+        border-radius: 8px;
+        color: white;
+
     }
 `;
 
 export const GridItem2 = styled.div`
     background: ${props => `url(${props.background}) no-repeat center left`};    
+    background-size:cover;
     position: relative;
     width: 50vw;
     height: 50vh;
@@ -59,11 +66,17 @@ export const GridItem2 = styled.div`
         right: 15px;
         position: absolute;
         background-color: blue;
+
+        border: 2px solid;
+        background-color: #ff9600c9;
+        border-radius: 8px;
+        color: white;
     }
 `;
 
 export const GridItem3 = styled.div`
     background: ${props => `url(${props.background}) no-repeat center left`};    
+    background-size:cover;
     position: relative;
     width: 50vw;
     height: 50vh;
@@ -73,12 +86,17 @@ export const GridItem3 = styled.div`
         top: 15px;
         left: 15px;
         position: absolute;
-        background-color: red;
+
+        border: 2px solid;
+        background-color: #ff9600c9;
+        border-radius: 8px;
+        color: white;
     }
 `;
 
 export const GridItem4 = styled.div`
-    background-color: gray;
+    background: ${props => `url(${props.background}) no-repeat center left`};    
+    background-size:cover;
     position: relative;
     width: 50vw;
     height: 50vh;
@@ -88,7 +106,11 @@ export const GridItem4 = styled.div`
         top: 15px;
         right: 15px;
         position: absolute;
-        background-color: blue;
+
+        border: 2px solid;
+        background-color: #ff9600c9;
+        border-radius: 8px;
+        color: white;
 }`;
 
 export const Core = styled.div`
