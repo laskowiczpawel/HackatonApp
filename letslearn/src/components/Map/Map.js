@@ -15,7 +15,7 @@ import { Modal, Button } from "antd";
 import { Controls } from "./styled"
 
 import { Link } from "react-router-dom";
-
+import { Tooltip } from 'antd';
 
 class AnimatedMap extends Component {
   constructor() {
@@ -119,32 +119,34 @@ class AnimatedMap extends Component {
                     geographies.map(
                       (geography, i) =>
                         geography.id !== "010" && (
-                          <Geography
-                            key={i}
-                            onClick={e => this.countryClick(geography)}
-                            geography={geography}
-                            projection={projection}
-                            style={{
-                              default: {
-                                fill: "#ECEFF1",
-                                stroke: "#607D8B",
-                                strokeWidth: 0.75,
-                                outline: "none"
-                              },
-                              hover: {
-                                fill: "#CFD8DC",
-                                stroke: "#607D8B",
-                                strokeWidth: 0.75,
-                                outline: "none"
-                              },
-                              pressed: {
-                                fill: "#FF5722",
-                                stroke: "#607D8B",
-                                strokeWidth: 0.75,
-                                outline: "none"
-                              }
-                            }}
-                          />
+                          <Tooltip title={geography.properties.name}>
+                            <Geography
+                              key={i}
+                              onClick={e => this.countryClick(geography)}
+                              geography={geography}
+                              projection={projection}
+                              style={{
+                                default: {
+                                  fill: "#ECEFF1",
+                                  stroke: "#607D8B",
+                                  strokeWidth: 0.75,
+                                  outline: "none"
+                                },
+                                hover: {
+                                  fill: "#CFD8DC",
+                                  stroke: "#607D8B",
+                                  strokeWidth: 0.75,
+                                  outline: "none"
+                                },
+                                pressed: {
+                                  fill: "#FF5722",
+                                  stroke: "#607D8B",
+                                  strokeWidth: 0.75,
+                                  outline: "none"
+                                }
+                              }}
+                            />
+                          </Tooltip>
                         )
                     )
                   }
