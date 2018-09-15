@@ -22,7 +22,7 @@ class AnimatedMap extends Component {
     super();
     this.state = {
       center: [0, 20],
-      zoom: 1,
+      zoom: 0.7,
       visible: false,
       country: null
     };
