@@ -128,9 +128,8 @@ class AnimatedMap extends Component {
                     geographies.map(
                       (geography, i) =>
                         geography.id !== "010" && (
-                          <Tooltip title={geography.properties.name}>
-                            <Geography
-                              key={i}
+                          <Tooltip title={geography.properties.name} key={i}>
+                            <Geography 
                               onClick={e => this.countryClick(geography)}
                               geography={geography}
                               projection={projection}

@@ -9,6 +9,7 @@ import {
   GridItem4
 } from "./MainFrame-styles";
 import {getDataAboutCountry} from "./workWithJSON";
+import { Link } from "react-router-dom";
 
 
 //this.props.match.params.counntry
@@ -25,7 +26,10 @@ export default class MainFrame extends React.Component{
 
     render(){
         if(!this.state.data)
-            return "";
+            return (<div style={{ height: '100vh', display: "flex", justifyContent: "center", alignItems: "center", flexDirection: 'column' }}>
+                <p>no record for this country :C </p>
+                <Link to={`/`}>Go back</Link>
+              </div>)
 
         return <Container>
             <GridContainer>
