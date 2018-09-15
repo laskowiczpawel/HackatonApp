@@ -23,7 +23,7 @@ export default class Quiz extends Component {
 
     render() {
         return (
-            <div>
+            <div className="quiz-test">
                 <MatchWordsC>
                     <MakeCards cards={this.gameList} onRightAnswer = {this.props.onRightAnswer} />
                 </MatchWordsC>

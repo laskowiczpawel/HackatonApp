@@ -27,7 +27,10 @@ export default class MainFrame extends React.Component {
     this.checkUnswers = this.checkUnswers.bind(this);
   }
 
-
+  show = () => {
+    document.querySelector(".quiz-test").style.display = "block"
+    document.querySelector(".wrapperTest").style.display = "none"
+  }
 
   checkUnswers(rightUnswers){
     switch (rightUnswers){
@@ -54,6 +57,8 @@ export default class MainFrame extends React.Component {
       default:
     }
   }
+
+
 
   render() {
     if (!this.state.data)
@@ -116,6 +121,30 @@ export default class MainFrame extends React.Component {
         </GridContainer>
         <Core>
           <Quiz gameData={this.state.data} onRightAnswer={this.checkUnswers}/>
+          {/* <Quiz gameData={this.state.data} /> */}
+          <div className="wrapperTest">
+          <div className="title">
+                    <h1>Słownik:</h1>
+                </div>
+                    <div>
+                        <ul >
+                            {this.state.data.words.map((item, index) => {
+                                if(index>=this.state.data.words.length/2){
+                                    return <li className="list-group-item" key={index}>
+                                        <div className="left-list">{item.abroad}</div><div className="right-list">{item.native}</div>
+                                      </li>;
+                                }
+                               
+                           
+                            })}
+                        </ul>
+                    </div>
+ 
+                    <button className="button-to-quiz" onClick={this.show}>
+                        Przejdź do quizu!
+                       
+                    </button>
+                    </div>
         </Core>
       </Container>
     );

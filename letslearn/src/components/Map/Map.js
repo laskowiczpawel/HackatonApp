@@ -90,14 +90,14 @@ class AnimatedMap extends Component {
             footer={null}
             onOk={this.handleOk}
             onCancel={this.handleCancel}>
-                    <p>Do you wany to start a quiz about {this.state.country}?</p>
-                    <Link to={`/quiz/${this.state.country}`}>Begin quiz</Link>
+                    <p>Do you wanna start your trip to {this.state.country}?</p>
+                    <Link to={`/quiz/${this.state.country}`}>Let's Go!</Link>
 
             </Modal>
         <Controls>
-            <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
+            {/*<button onClick={this.handleZoomIn}>{"Zoom in"}</button>
             <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
-            <button onClick={this.handleReset}>{"Reset"}</button>
+    <button onClick={this.handleReset}>{"Reset"}</button>*/}
         </Controls>
 
         <Motion

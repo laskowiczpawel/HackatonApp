@@ -1,5 +1,5 @@
 export default {
-  "United Kingdom":{      
+  "United Kingdom": {
     "words": [
       {
         "abroad": "Table",
@@ -130,7 +130,7 @@ export default {
         "native": "Kuchnia"
       }
     ],
-    "kitchen":[
+    "kitchen": [
       {
         "name": "Beef Wellington",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Beef_Wellington_-_Crosscut.jpg/1280px-Beef_Wellington_-_Crosscut.jpg",
@@ -146,31 +146,31 @@ export default {
         "img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Full_English_breakfast_with_bubble_and_squeak%2C_sausage%2C_bacon%2C_grilled_tomatoes%2C_and_eggs.jpg",
         "description": "brytyjskie danie przyrządzane z podsmażonych resztek z Sunday roast (tradycyjnej pieczeni, spożywanej zazwyczaj na niedzielny obiad)."
       }
-      ],
+    ],
     "places": [
-        {
-          "name": "Stonehenge",
-          "description": "Jedna z najsłynniejszych europejskich budowli megalitycznych, pochodząca z epok neolitu i brązu. Kromlech ten położony jest w odległości 13 km od miasta Salisbury w hrabstwie Wiltshire w południowej Anglii.",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg"
-        },
-        {
-          "name": "Palace of Westminster",
-          "description":"Zabytkowy, neogotycki pałac w Londynie, w Wielkiej Brytanii; siedziba brytyjskiej Izby Gmin, Izby Lordów oraz urzędów z nimi związanych; zabytek I klasy od 1970 roku, w 1987 roku wpisany na listę światowego dziedzictwa UNESCO. ",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Parliament_at_Sunset.JPG/1280px-Parliament_at_Sunset.JPG"
-        },
-        {
-          "name": "Tower Bridge",
-          "description":"Most zwodzony w Londynie (mylony niekiedy z sąsiednim Mostem Londyńskim, London Bridge) przeprowadzony przez Tamizę w pobliżu Tower of London, od której bierze swą nazwę. Jeden z najbardziej znanych obiektów w Londynie, zbudowany w stylu wiktoriańskim.",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tower_Bridge_%2889753199%29.jpeg/1280px-Tower_Bridge_%2889753199%29.jpeg"
-        }
-      ],
+      {
+        "name": "Stonehenge",
+        "description": "Jedna z najsłynniejszych europejskich budowli megalitycznych, pochodząca z epok neolitu i brązu. Kromlech ten położony jest w odległości 13 km od miasta Salisbury w hrabstwie Wiltshire w południowej Anglii.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg"
+      },
+      {
+        "name": "Palace of Westminster",
+        "description": "Zabytkowy, neogotycki pałac w Londynie, w Wielkiej Brytanii; siedziba brytyjskiej Izby Gmin, Izby Lordów oraz urzędów z nimi związanych; zabytek I klasy od 1970 roku, w 1987 roku wpisany na listę światowego dziedzictwa UNESCO. ",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Parliament_at_Sunset.JPG/1280px-Parliament_at_Sunset.JPG"
+      },
+      {
+        "name": "Tower Bridge",
+        "description": "Most zwodzony w Londynie (mylony niekiedy z sąsiednim Mostem Londyńskim, London Bridge) przeprowadzony przez Tamizę w pobliżu Tower of London, od której bierze swą nazwę. Jeden z najbardziej znanych obiektów w Londynie, zbudowany w stylu wiktoriańskim.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tower_Bridge_%2889753199%29.jpeg/1280px-Tower_Bridge_%2889753199%29.jpeg"
+      }
+    ],
     "information": {
       "capital": "London",
       "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png",
       "language": "Angielski",
       "area": "242 495",
       "population": "66 040 229"
-    }    
+    }
   },
   Spain: {
     words: [
@@ -357,9 +357,9 @@ export default {
       area: "504 645",
       population: "48 563 476"
     }
-    
+
   },
-  "France":{  
+  "France": {
     "words": [
       {
         "abroad": "la table",
@@ -490,11 +490,11 @@ export default {
         native: "Kuchnia"
       }
     ],
-    "kitchen":[
+    "kitchen": [
       {
         "name": "Boeuf Bourguignon",
         "img": "https://www.tasteaway.pl/wp-content/uploads/2016/05/wo%C5%82owina.jpg",
-        "description": "Boeuf Bourguignon – Obowiązkowo do spróbowania dla każdego mięsożercy! Klasyk i podobno jedno z popisowych dań sławnej Julii Child, spopularyzowane na świecie przez film „Julie & Julia”. Wyjątkowo miękkie kawałki długo gotowanej wołowiny w aksamitnym sosie z dodatkiem warzyw, idealnie smakują z gotowanymi ziemniakami. Jak sama nazwa wskazuje, danie pochodzi z Burgundii. I znów: kiedyś jedzone raczej przez przedstawicieli biedniejszych i gorzej sytuowanych warstw społecznych, teraz danie do zamówienia również w całkiem eleganckiej restauracji lub do zrobienia na kolację z przyjaciółmi. Julia Child mawiała, że to jedno z najlepszych dań z wołowiny, jakie zna ludzkość."
+        "description": "Wyjątkowo miękkie kawałki długo gotowanej wołowiny w aksamitnym sosie z dodatkiem warzyw, idealnie smakują z gotowanymi ziemniakami. Jak sama nazwa wskazuje, danie pochodzi z Burgundii. I znów: kiedyś jedzone raczej przez przedstawicieli biedniejszych i gorzej sytuowanych warstw społecznych, teraz danie do zamówienia również w całkiem eleganckiej restauracji lub do zrobienia na kolację z przyjaciółmi. Julia Child mawiała, że to jedno z najlepszych dań z wołowiny, jakie zna ludzkość."
       },
       {
         "name": "Omlette du fromage",
@@ -506,19 +506,19 @@ export default {
         "img": "http://www.tasteaway.pl/wp-content/uploads/2016/05/DSC_3081-640x427.jpg",
         "description": "W sam raz na śniadanie albo na szybką przekąskę – najczęściej można go kupić po prostu w piekarni, chwycić w biegu i zjeść, chociaż chyba jeszcze lepiej smakuje na ciepło. Sam quiche to rodzaj wypieku na bazie słonego kruchego ciasta i wytrwanego, zapiekanego nadzienia. Najbardziej sławny jest właśnie quiche lorraine, czyli po polsku placek lotaryński na bazie boczku, szynki, tartego sera, śmietany i jajek. Czasem dodawane są również warzywa. Wywodzi się z północno-wschodniej Francji, a początki placka wiązane są z Lotaryngią oraz z Alzacją. Podobnie jak zupa cebulowa, początkowo było to danie rolników – tanie, z łatwo dostępnych składników. Z czasem jednak w placku zakochali się również książęta i jego pierwotny przepis, na cieście chlebowym, został zmieniony i wzbogacony – z jednej strony o więcej składników, z drugiej strony o składniki lepszej jakości (jak choćby mięso)."
       }
-      ],
-    
+    ],
+
 
     places: [
       {
         name: "Mont Saint Michel",
         description: "Mont Saint Michel to niezwykłe opactwo i miasteczko w Normandii, jedna z największych atrakcji Francji, rocznie odwiedzana przez 3 miliony turystów. Mont Saint Michel, czyli Wzgórze Świętego Michała znajduje się prawie 2 km od stałego lądu. Przy dużych przypływach występujących 53 razy w roku Mont Saint Michel jest zalewane. Z kontynentalną Francją miasteczko łączy wówczas jedynie wąska grobla długości 1800 metrów. Zbliżająca się fala jest ogłaszana zawczasu przez bicie dzwonów na szczycie.",
         img: "https://static.posters.cz/image/1300/fototapety/francja-mont-saint-michel-312x219-cm-130g/m2-vlies-non-woven-i40756.jpg"
-      },
+      },  
       {
         name: "Eze",
         description:
-          "Eze, wisząca na nadbrzeżnej skale średniowieczna warowna wioska, nazywana orlim gniazdem, jest jednym z najpiękniejszych miejsc na Lazurowym Wybrzeżu. Piękne, brukowane ulice, ogrody, z których rozciągają się widoki na zatokę oraz majestatyczne ruiny zamku, sprawiają, że wizyta w Eze jest sporym doznaniem estetycznym. Miejscowością zachwycał się słynny niemiecki filozof Friedrich Nietzsche. Na pamiątkę jego pobytu ścieżkę łączącą Eze-Village z niżej położonym Eze-sur-Mer, którą często chadzał, nazwano Chemin Frédéric Nietzsche. Warto się przejść uliczkami wewnątrz zamkowych murów, a z ich szczytu spojrzeć na w bezkresne morze - przy dobrej pogodzie widać też Saint-Tropez i Korsykę. Całkowicie odrestaurowane Eze utrzymuje się głównie z turystyki oraz ze sprzedaży wyrobów rzemieślniczych.",
+          "Eze, wisząca na nadbrzeżnej skale średniowieczna warowna wioska, nazywana orlim gniazdem, jest jednym z najpiękniejszych miejsc na Lazurowym Wybrzeżu. Piękne, brukowane ulice, ogrody, z których rozciągają się widoki na zatokę oraz majestatyczne ruiny zamku, sprawiają, że wizyta w Eze jest sporym doznaniem estetycznym. Miejscowością zachwycał się słynny niemiecki filozof Friedrich Nietzsche.",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Eze_viewed_from_Grand_Corniche.JPG/1200px-Eze_viewed_from_Grand_Corniche.JPG"
       },
       {
@@ -696,7 +696,7 @@ export default {
       {
         name: "Schloss Neuschwanstein",
         description:
-          "Niemcy to kraj wielu pięknych zamków, ale Neuschwanstein jest wyjątkowy. Jeśli poprosicie jakieś dziecko na świecie, aby wyobraziło sobie twierdzę, w której mieszka jakaś królewna prawdopodobnie wyobrazi sobie właśnie ten zamek! A wiecie dlaczego? Bo to właśnie tę budowlę znamy z najsłynniejszych kreskówek na świecie – z filmów Disneya. Stanowił on insirację chociażby dla rysowników Królewny Śnieżki. Budowla została zaprojektowana na życzenie dla króla bawarskiego Ludwika II Wittelsbacha. Miała być wyidealizowaną repliką średniowiecznego zamku rycerskiego. Prace budownicze nigdy nie zostały ukończone, jednak mimo to jest jest on najwspanialszym „bajkowym” zamkiem istniejącym w rzeczywistości. Co roku przyjeżdża go obejrzeć ponad miliona turystów.",
+          "Niemcy to kraj wielu pięknych zamków, ale Neuschwanstein jest wyjątkowy. Jeśli poprosicie jakieś dziecko na świecie, aby wyobraziło sobie twierdzę, w której mieszka jakaś królewna prawdopodobnie wyobrazi sobie właśnie ten zamek! A wiecie dlaczego? Bo to właśnie tę budowlę znamy z najsłynniejszych kreskówek na świecie – z filmów Disneya. Stanowił on insirację chociażby dla rysowników Królewny Śnieżki.",
         img: "https://polskiobserwator.de/wp-content/uploads/2016/07/neu1.jpg"
       },
       {
@@ -907,181 +907,5 @@ export default {
       area: "756 950",
       population: "18 383 000"
     }
-  },
-  "Germany":{  
-    "words": [
-      {
-        "abroad": "der Tisch",
-        "native": "Stół"
-      },
-      {
-        "abroad": "Bordkarte",
-        "polish": "Karta pokladowa"
-      },
-      {
-        "abroad": "Abflug",
-        "polish": "Wylot"
-      },
-      {
-        "abroad": "der Ankunft",
-        "polish": "Przylot"
-      },
-      {
-        "abroad": "das Reisegepäck",
-        "polish": "Bagaż"
-      },
-      {
-        "abroad": "die Verzögerung",
-        "polish": "Opóźnienie"
-      },
-      {
-        "abroad": "die Rechnung",
-        "polish": "Rachunek"
-      },
-      {
-        "abroad": "Hallo",
-        "polish": "Cześć"
-      },
-      {
-        "abroad": "Zahnstocher",
-        "polish": "Wykałaczka"
-      },
-      {
-        "abroad": "der Kellner",
-        "polish": "Kelner"
-      },
-      {
-        "abroad": "der U-Bahn",
-        "polish": "Metro"
-      },
-      {
-        "abroad": "die Fahrkarte",
-        "polish": "Bilet"
-      },
-      {
-        "abroad": "der Haltestelle",
-        "polish": "Przystanek"
-      },
-      {
-        "abroad": "der Sitz",
-        "polish": "Siedzenie"
-      },
-      {
-        "abroad": "das Essen",
-        "polish": "Danie"
-      },
-      {
-        "abroad": "die Platte",
-        "polish": "Talerz"
-      },
-      {
-        "abroad": "das Messer",
-        "polish": "Nóż"
-      },
-      {
-        "abroad": "die Löffel",
-        "polish": "Łyżka"
-      },
-      {
-        "abroad": "Touristenattraktion",
-        "polish": "Atrakcje turystyczne"
-      },
-      {
-        "abroad": "das Fahrrad",
-        "polish": "Bike"
-      },
-      {
-        "abroad": "die Reise",
-        "polish": "Travel"
-      },
-      {
-        "abroad": "die Hilfe",
-        "polish": "Pomoc"
-      },
-      {
-        "abroad": "der Fluss",
-        "polish": "Rzeka"
-      },
-      {
-        "abroad": "das Schloss",
-        "polish": "Zamek"
-      },
-      {
-        "abroad": "Danke!",
-        "polish": "Dziękuję"
-      },
-      {
-        "abroad": "die Frage",
-        "polish": "Zapytanie"
-      },
-      {
-        "abroad": "das Frühstück",
-        "polish": "Śniadanie"
-      },
-      {
-        "abroad": "das Mittagessen",
-        "polish": "Obiad"
-      },
-      {
-        "abroad": "das Abendessen",
-        "polish": "Kolacja"
-      },
-      {
-        "abroad": "der Zeit",
-        "polish": "Czas"
-      },
-      {
-        "abroad": "das Restaurant",
-        "polish": "Restauracja"
-      },
-      {
-        "abroad": "der Küche",
-        "polish": "Kuchnia"
-      }
-    ],
-    "kitchen":[
-      {
-        "name": "Currywurst",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Currywurst-1.jpg/1280px-Currywurst-1.jpg",
-        "description": "Currywurst – jedno z typowych niemieckich dań zaliczanych do tzw. fast foodów. Jest to zwykle podawana na gorąco grillowana, pieczona lub rzadziej gotowana kiełbasa wieprzowa posypana duża ilością przyprawy curry i polana specjalnym sosem, którego bazą jest koncentrat pomidorowy. W najtańszym wydaniu Currywurst podawane jest ze zwykłym ketchupem. Danie to jest zwykle spożywane z bułką lub frytkami."
-      },
-      {
-        "name": "Kartoffelsalat",
-        "img": "http://cdn1.beszamel.smcloud.net/t/thumbs/660/441/1/user_photos/shutterstock_523798666.jpg",
-        "description": "Kartoffelsalat - potrawa kuchni niemieckich oraz kuchni pozostających pod wpływami niemieckimi[1]. Sałatka przygotowywana jest przede wszystkim na bazie ziemniaków, ogórków, cebuli, majonezu, soli i pieprzu."
-      },
-      {
-        "name": "Linsensuppe",
-        "img": "https://www.profi.pl/wp-content/uploads/2017/12/kochamzupy_d98da5f2d482073997f74eb16e17a60c-768x768.jpg",
-        "description": "zupa z soczewicy, podawana na gorąco. Jest popularna na całym Środkowym Wschodzie, a także na Węgrzech i w Niemczech. Zupa soczewicowa jest zwykle wegetariańska, jednak może być również przygotowana z użyciem mięsa. Najczęściej używa się czerwonej lub zielonej soczewicy. Wśród innych składników można znaleźć takie warzywa jak: marchew, ziemniaki, seler, pietruszka, cukinia czy cebula. Często stosowane przyprawy to czosnek, kmin rzymski, sok z cytryny, oliwa z oliwek."
-      }
-      ],
-    
-
-
-        "places": [
-        {
-          "name": "Schloss Neuschwanstein",
-          "description": "Niemcy to kraj wielu pięknych zamków, ale Neuschwanstein jest wyjątkowy. Jeśli poprosicie jakieś dziecko na świecie, aby wyobraziło sobie twierdzę, w której mieszka jakaś królewna prawdopodobnie wyobrazi sobie właśnie ten zamek! A wiecie dlaczego? Bo to właśnie tę budowlę znamy z najsłynniejszych kreskówek na świecie – z filmów Disneya. Stanowił on insirację chociażby dla rysowników Królewny Śnieżki. Budowla została zaprojektowana na życzenie dla króla bawarskiego Ludwika II Wittelsbacha. Miała być wyidealizowaną repliką średniowiecznego zamku rycerskiego. Prace budownicze nigdy nie zostały ukończone, jednak mimo to jest jest on najwspanialszym „bajkowym” zamkiem istniejącym w rzeczywistości. Co roku przyjeżdża go obejrzeć ponad miliona turystów.",
-          "img": "https://polskiobserwator.de/wp-content/uploads/2016/07/neu1.jpg"
-        },
-        {
-          "name": "Katedra w Kolonii",
-          "description":"Czy wiecie, że przez długi czas była ona największym budynkiem istniejącym na naszej planecie? Jej budowa trwała ponad 600 lat i niewątpliwe jest jednym z najpiękniejszych kościołów na świecie. Innym powodem, dla którego warto ją zobaczyć jest Gruby Piotrek, tj, Dzwon Świętego Piotra będącym największym bijącym dzwonem na naszym globie.",
-          "img": "https://polskiobserwator.de/wp-content/uploads/2016/07/kolonia11.jpg"
-        },
-{
-          "name": "Brama Brandenburska",
-          "description":"To niewątpliwie najbardziej znany symbol Berlina. To ona zdobi rewers niemieckiej wersji monet eurocentów o nominałach 10, 20 i 50. Dlaczego? W okresie zimnej wojny bowiem tę właśnie bramę zamykał słynny mur dzielący miasto, nic więc dziwnego, że upadku komunizmu brama stała się jednym z głównych symboli zjednoczenia Niemiec.",
-          "img": "https://polskiobserwator.de/wp-content/uploads/2016/07/brandeburska.jpg"
-        }
-      ],
-    "information": {
-      "capital": "Berlin",
-      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1000px-Flag_of_Germany.svg.png",
-      "language": "niemiecki",
-      "area": "357 375",
-      "population": "82 665 660"
-    }   
   }
 }
