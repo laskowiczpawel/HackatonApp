@@ -21,6 +21,7 @@ export default class MainFrame extends React.Component{
             country: this.props.match.params.country,
             data: countryInfo?countryInfo:null 
         }
+        console.log(this.state.data);
     }
 
     render(){
@@ -29,28 +30,41 @@ export default class MainFrame extends React.Component{
 
         return <Container>
             <GridContainer>
-                <GridItem1>      
-                    <div className="information"><h3>{this.state.country}</h3><br />
-                        Stolica: {this.state.data.information.capital}<br />
-                        Język: {this.state.data.information.language}<br />
-                        Powierzchnia: {this.state.data.information.area}<br />
-                        Populacja: {this.state.data.information.population}<br />
-                    </div>                   
-                    <div className = "white-front"></div>
-                </GridItem1>
-                <GridItem2>    
-           
-                    <div className= "white-front"></div>
-                </GridItem2>
-                <GridItem3>
-                    <div className= "white-front"></div>
-                </GridItem3>
-                <GridItem4>
-                    <div className= "white-front"></div>
-                </GridItem4>
-            </GridContainer>            
-            <Core>          
-            </Core>
+              <GridItem1 background={this.state.data.places[2].img}>
+                <div className="information">
+                  <h2>{this.state.country}</h2>
+                  Stolica: {this.state.data.information.capital}
+                  <br />
+                  Język: {this.state.data.information.language}
+                  <br />
+                  Powierzchnia: {this.state.data.information.area}
+                  <br />
+                  Populacja: {this.state.data.information.population}
+                  <br />
+                </div>
+                <div className="white-front" />
+              </GridItem1>
+              <GridItem2 background={this.state.data.kitchen[0].img}>
+                <div className="kitchen">
+                  <h2>{this.state.data.kitchen[0].name}</h2>
+                  {this.state.data.kitchen[0].description}
+                  <br />
+                </div>
+                <div className="white-front" />
+              </GridItem2>
+              <GridItem3 background = {this.state.data.places[0].img}>
+                <div className="place">
+                  <h2>{this.state.data.places[0].name}</h2>
+                  {this.state.data.places[0].description}
+                  <br />
+                </div>
+                <div className="white-front" />
+              </GridItem3>
+              <GridItem4>
+                <div className="white-front" />
+              </GridItem4>
+            </GridContainer>
+            <Core />
           </Container>;
     }
 }
