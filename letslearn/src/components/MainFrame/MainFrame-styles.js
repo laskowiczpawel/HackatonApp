@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const blueColor = "#001F36";
 const orangeColor = "#e69138ff";
@@ -25,11 +25,15 @@ export const GridContainer = styled.div`
         background-color: ${blueColor};
         opacity: 0.7;
     }
+
+    .white-background{
+        background-color: white;
+        position: absolute;
+    }
 `;
 
 export const GridItem1 = styled.div`
-    position: relative;
-    background-color: blue;
+    background: ${props => `url(${props.background}) no-repeat center left`}; 
     position: relative;
     width: 50vw;
     height: 50vh;
@@ -44,17 +48,33 @@ export const GridItem1 = styled.div`
 `;
 
 export const GridItem2 = styled.div`
-    background-color: red;
+    background: ${props => `url(${props.background}) no-repeat center left`};    
     position: relative;
     width: 50vw;
     height: 50vh;
+
+    .kitchen{
+        width: 22vw;
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        background-color: blue;
+    }
 `;
 
 export const GridItem3 = styled.div`
-    background-color: green;
+    background: ${props => `url(${props.background}) no-repeat center left`};    
     position: relative;
     width: 50vw;
     height: 50vh;
+
+    .place{
+        width: 22vw;
+        top: 15px;
+        left: 15px;
+        position: absolute;
+        background-color: red;
+    }
 `;
 
 export const GridItem4 = styled.div`
