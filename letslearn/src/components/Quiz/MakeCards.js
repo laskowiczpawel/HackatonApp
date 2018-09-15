@@ -67,6 +67,7 @@ class MakeCards extends Component {
         if (this.firstAnsw === this.secondAnsw) {
             console.log('correct answ');
             this.correctAnswers += 2;
+            this.props.onRightAnswer(this.correctAnswers);
             console.log(this.correctAnswers);
             this.firstAnsw = '';
             this.secondAnsw = '';

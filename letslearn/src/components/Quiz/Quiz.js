@@ -25,7 +25,7 @@ export default class Quiz extends Component {
         return (
             <div>
                 <MatchWordsC>
-                        <MakeCards cards={this.gameList} />
+                    <MakeCards cards={this.gameList} onRightAnswer = {this.props.onRightAnswer} />
                 </MatchWordsC>
             </div>
         )

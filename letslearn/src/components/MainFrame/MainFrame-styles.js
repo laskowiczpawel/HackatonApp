@@ -39,8 +39,10 @@ export const GridItem1 = styled.div`
     width: 50vw;
     height: 50vh;
 
-    .information{
-        width: 22vw;
+    .white-front{
+        visibility: ${props => props.visible}; 
+    }
+    .information {width: 22vw;
         top: 15px;
         left: 15px;
         position: absolute;
@@ -59,6 +61,10 @@ export const GridItem2 = styled.div`
     position: relative;
     width: 50vw;
     height: 50vh;
+
+    .white-front{
+        visibility: ${props => props.visible}; 
+    }
 
     .kitchen{
         width: 22vw;
@@ -80,6 +86,10 @@ export const GridItem3 = styled.div`
     position: relative;
     width: 50vw;
     height: 50vh;
+   
+    .white-front{
+        visibility: ${props => props.visible}; 
+    }
 
     .place{
         width: 22vw;
@@ -100,6 +110,10 @@ export const GridItem4 = styled.div`
     position: relative;
     width: 50vw;
     height: 50vh;
+
+    .white-front{
+        visibility: ${props => props.visible}; 
+    }
 
     .place {
         width: 22vw;
