@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GridItem } from './MatchWords_style';
+import { GridItem, GridArea } from './MatchWords_style';
 
 class MakeCards extends Component {
     constructor(props) {
@@ -9,6 +9,7 @@ class MakeCards extends Component {
         this.secondAnsw = '';
         this.firstAnswKey = '';
         this.secondAnswKey = '';
+
         this.appendCards();
     }
 
@@ -46,14 +47,14 @@ class MakeCards extends Component {
 
     checkCards(event, key) {
         if (this.firstAnsw === '' && this.secondAnsw === '') {
-            this.firstAnsw = event;
-            this.fristAnswKey = key;
-            console.log(this.firstAnswKey);
+            this.firstAnswKey = key;
+            this.firstAnsw = event; 
+            console.log(this.firstAnsw)
         } 
-        else if ((this.firstAnsw !== '') && (this.secondAnsw === '') && (this.firstAnswKey !== key)) {
-            console.log(event);
+        else if ((this.firstAnsw !== '') && (this.secondAnsw === '') && (this.firstAnswKey !== key) && (this.secondAnswKey === '')) {
             this.secondAnsw = event;
             this.secondAnswKey = key;
+            console.log(this.secondAnsw);
         }
         else {
             if (this.firstAnsw === this.secondAnsw) {
@@ -62,15 +63,17 @@ class MakeCards extends Component {
                 console.log('wrong answer');
                 this.firstAnsw = '';
                 this.secondAnsw = '';
+                this.secondAnswKey = '';
+                this.firstAnswKey = '';
             }
         }
     }
 
     render() {
         return (
-            <div className="Grid">
+            <GridArea>
                 {this.cards}
-            </div>    
+            </GridArea>   
         )
     }
 }

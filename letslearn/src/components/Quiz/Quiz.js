@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MakeCards from './MakeCards';
-import { MatchWordsC, GridArea } from './MatchWords_style';
+import { MatchWordsC } from './MatchWords_style';
 
 export default class Quiz extends Component {
     constructor(props) {
@@ -154,9 +154,7 @@ export default class Quiz extends Component {
             <div>
                 {this.props.match.params.country}
                 <MatchWordsC>
-                    <GridArea>
                         <MakeCards cards={this.gameList} />
-                    </GridArea>
                 </MatchWordsC>
             </div>
         )
