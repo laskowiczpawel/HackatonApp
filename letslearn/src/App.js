@@ -14,7 +14,7 @@ class App extends Component {
      <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Map} />
-        <Route exact path='/quiz/:country' component={MainFrame} />
+        <Route exact path='/quiz/:country' component={Quiz} />
       </Switch>
      </BrowserRouter>
     )

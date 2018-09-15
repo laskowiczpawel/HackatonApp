@@ -1,12 +1,12 @@
 
 import React, { Component } from "react"
 import {
-    ComposableMap,
-    ZoomableGroup,
-    Geographies,
-    Geography,
-    Markers,
-    Marker,
+  ComposableMap,
+  ZoomableGroup,
+  Geographies,
+  Geography,
+  Markers,
+  Marker,
 } from "react-simple-maps"
 import { Motion, spring } from "react-motion"
 import map from "../../static/world-50m.json"
@@ -33,7 +33,7 @@ class AnimatedMap extends Component {
   }
 
   handleOk = e => {
-      console.log(e)
+    console.log(e)
   }
 
 
@@ -49,7 +49,7 @@ class AnimatedMap extends Component {
     this.setState((state) => ({
       zoom: state.zoom + y
     })
-  )
+    )
   }
 
   handleZoomIn() {
@@ -75,29 +75,29 @@ class AnimatedMap extends Component {
     });
   }
   countryClick = e => {
-      this.setState({
-          visible: true,
-          country: e.properties.name
-      });
+    this.setState({
+      visible: true,
+      country: e.properties.name
+    });
   }
   render() {
     return (
       <div style={wrapperStyles} onWheel={e => this.scroll(e)}>
-          <Modal
-            title={this.state.country}
-            width={500}
-            visible={this.state.visible}
-            footer={null}
-            onOk={this.handleOk}
-            onCancel={this.handleCancel}>
-                    <p>Do you wany to start a quiz about {this.state.country}?</p>
-                    <Link to={`/quiz/${this.state.country}`}>Begin quiz</Link>
+        <Modal
+          title={this.state.country}
+          width={500}
+          visible={this.state.visible}
+          footer={null}
+          onOk={this.handleOk}
+          onCancel={this.handleCancel}>
+          <p>Do you wany to start a quiz about {this.state.country}?</p>
+          <Link to={`/quiz/${this.state.country}`}>Begin quiz</Link>
 
-            </Modal>
+        </Modal>
         <Controls>
-            <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
-            <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
-            <button onClick={this.handleReset}>{"Reset"}</button>
+          <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
+          <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
+          <button onClick={this.handleReset}>{"Reset"}</button>
         </Controls>
 
         <Motion
@@ -129,7 +129,7 @@ class AnimatedMap extends Component {
                       (geography, i) =>
                         geography.id !== "010" && (
                           <Tooltip title={geography.properties.name} key={i}>
-                            <Geography 
+                            <Geography
                               onClick={e => this.countryClick(geography)}
                               geography={geography}
                               projection={projection}
