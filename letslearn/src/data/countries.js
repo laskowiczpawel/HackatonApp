@@ -529,7 +529,7 @@ export default {
       {
         name: "Mont Saint Michel",
         description: "Mont Saint Michel to niezwykłe opactwo i miasteczko w Normandii, jedna z największych atrakcji Francji, rocznie odwiedzana przez 3 miliony turystów. Mont Saint Michel, czyli Wzgórze Świętego Michała znajduje się prawie 2 km od stałego lądu. Przy dużych przypływach występujących 53 razy w roku Mont Saint Michel jest zalewane. Z kontynentalną Francją miasteczko łączy wówczas jedynie wąska grobla długości 1800 metrów. Zbliżająca się fala jest ogłaszana zawczasu przez bicie dzwonów na szczycie.",
-        img: "http://bi.gazeta.pl/im/4/5842/z5842734IH,mont-saint-michel--francja--opactwo.jpg"
+        img: "https://static.posters.cz/image/1300/fototapety/francja-mont-saint-michel-312x219-cm-130g/m2-vlies-non-woven-i40756.jpg"
       },
       {
         name: "Eze",

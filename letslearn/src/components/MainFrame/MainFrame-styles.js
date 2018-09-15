@@ -82,7 +82,14 @@ export const GridItem4 = styled.div`
     position: relative;
     width: 50vw;
     height: 50vh;
-`;
+
+    .place {
+        width: 22vw;
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        background-color: blue;
+}`;
 
 export const Core = styled.div`
     border: 5px solid ${orangeColor};
