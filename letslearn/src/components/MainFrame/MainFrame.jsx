@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Container,
   Core,
@@ -8,29 +8,40 @@ import {
   GridItem3,
   GridItem4
 } from "./MainFrame-styles";
-import {getDataAboutCountry} from "./workWithJSON";
+import { getDataAboutCountry } from "./workWithJSON";
 import { Link } from "react-router-dom";
+import Quiz from "../Quiz/Quiz";
 
+export default class MainFrame extends React.Component {
+  constructor(props) {
+    super(props);
+    const countryInfo = getDataAboutCountry(this.props.match.params.country);
+    this.state = {
+      country: this.props.match.params.country,
+      data: countryInfo ? countryInfo : null
+    };
+    console.log(this.state.data);
+  }
 
-export default class MainFrame extends React.Component{
-    constructor(props){
-        super(props);
-        const countryInfo = getDataAboutCountry(this.props.match.params.country);
-        this.state = {            
-            country: this.props.match.params.country,
-            data: countryInfo?countryInfo:null 
-        }
-        console.log(this.state.data);
-    }
+  render() {
+    if (!this.state.data)
+      return (
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column"
+          }}
+        >
+          <p>no record for this country :C </p>
+          <Link to={`/`}>Go back</Link>
+        </div>
+      );
 
-    render(){
-      if(!this.state.data)
-          return (<div style={{ height: '100vh', display: "flex", justifyContent: "center", alignItems: "center", flexDirection: 'column' }}>
-              <p>no record for this country :C </p>
-              <Link to={`/`}>Go back</Link>
-            </div>)
-
-      return <Container>
+    return (
+      <Container>
         <GridContainer>
           <GridItem1 background={this.state.data.places[2].img}>
             <div className="information">
@@ -54,7 +65,7 @@ export default class MainFrame extends React.Component{
             </div>
             <div className="white-front" />
           </GridItem2>
-          <GridItem3 background = {this.state.data.places[0].img}>
+          <GridItem3 background={this.state.data.places[0].img}>
             <div className="place">
               <h2>{this.state.data.places[0].name}</h2>
               {this.state.data.places[0].description}
@@ -62,7 +73,7 @@ export default class MainFrame extends React.Component{
             </div>
             <div className="white-front" />
           </GridItem3>
-          <GridItem4 background = {this.state.data.places[1].img}>
+          <GridItem4 background={this.state.data.places[1].img}>
             <div className="place">
               <h2>{this.state.data.places[1].name}</h2>
               {this.state.data.places[1].description}
@@ -71,7 +82,10 @@ export default class MainFrame extends React.Component{
             <div className="white-front" />
           </GridItem4>
         </GridContainer>
-        <Core />
-      </Container>;
-    }
+        <Core>
+          <Quiz gameData={this.state.data} />
+        </Core>
+      </Container>
+    );
+  }
 }
