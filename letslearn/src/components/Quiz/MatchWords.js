@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import MakeCards from './MakeCards';
 import { MatchWordsC, GridArea } from './MatchWords_style';
 
-export default class Quiz extends Component {
+class MatchWords extends Component {
     constructor(props) {
         super(props);
         // definicja kard
@@ -136,13 +136,13 @@ export default class Quiz extends Component {
                 "native": "Kuchnia"
             }
         ];
-
+        
         this.gameList = [];
         this.nativeLang = [];
         this.abroadLang = [];
         this.selectTen(this.wordsList);
     }
-
+    
     selectTen(list) {
         this.gameList = list.concat(list).sort(function () {
             return 0.5 - Math.random();
@@ -151,14 +151,13 @@ export default class Quiz extends Component {
 
     render() {
         return (
-            <div>
-                {this.props.match.params.country}
-                <MatchWordsC>
-                    <GridArea>
-                        <MakeCards cards={this.gameList} />
-                    </GridArea>
-                </MatchWordsC>
-            </div>
+            <MatchWordsC>
+                <GridArea>
+                    <MakeCards cards={this.gameList} />
+                </GridArea>
+            </MatchWordsC>
         )
     }
 }
+
+export default MatchWords;
