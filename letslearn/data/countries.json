@@ -334,7 +334,7 @@
             "description":"Warowny zespół pałacowy w Grenadzie w andaluzyjskim regionie Hiszpanii, zbudowany w latach 1232–1273 i rozbudowywany do XIV wieku. Jej rozbudowa trwała za panowania emirów z dynastii Nasrydów – Jusufa I i Muhammada V. Alhambra była twierdzą mauretańskich kalifów. Zabytek arabskiego budownictwa w Europie",
             "img": "https://www.alhambradegranada.org/imagenes/secciones/ntpo4alhao7j6iceijx45bd2hi_3.jpg"
           },
-{
+          {
             "name": "Ibiza",
             "description":"Trzecia co do wielkości i druga co do liczby ludności wyspa hiszpańskiego archipelagu Baleary, położona w zachodniej jego części. Powierzchnia 571 km², największa w grupie Pitiuz.",
             "img": "https://i.content4travel.com/cms/img/u/kraj/1/ibiza_4.jpg?version=51"
@@ -349,7 +349,7 @@
       }
     }
   },
-{
+
   "france":{  
     "french": {
       "words": [
@@ -486,9 +486,7 @@
         {
           "name": "Boeuf Bourguignon",
           "img": "https://www.tasteaway.pl/wp-content/uploads/2016/05/wo%C5%82owina.jpg",
-          "description": "Boeuf Bourguignon – Obowiązkowo do spróbowania dla każdego mięsożercy! Klasyk i podobno jedno z popisowych dań sławnej Julii Child, spopularyzowane na świecie przez film „Julie & Julia”. Wyjątkowo miękkie kawałki długo gotowanej wołowiny w aksamitnym sosie z dodatkiem warzyw, idealnie smakują z gotowanymi ziemniakami. Jak sama nazwa wskazuje, danie pochodzi z Burgundii. I znów: kiedyś jedzone raczej przez przedstawicieli biedniejszych i gorzej sytuowanych warstw społecznych, teraz danie do zamówienia również w całkiem eleganckiej restauracji lub do zrobienia na kolację z przyjaciółmi. Julia Child mawiała, że to jedno z najlepszych dań z wołowiny, jakie zna ludzkość.
-
- "
+          "description": "Boeuf Bourguignon – Obowiązkowo do spróbowania dla każdego mięsożercy! Klasyk i podobno jedno z popisowych dań sławnej Julii Child, spopularyzowane na świecie przez film „Julie & Julia”. Wyjątkowo miękkie kawałki długo gotowanej wołowiny w aksamitnym sosie z dodatkiem warzyw, idealnie smakują z gotowanymi ziemniakami. Jak sama nazwa wskazuje, danie pochodzi z Burgundii. I znów: kiedyś jedzone raczej przez przedstawicieli biedniejszych i gorzej sytuowanych warstw społecznych, teraz danie do zamówienia również w całkiem eleganckiej restauracji lub do zrobienia na kolację z przyjaciółmi. Julia Child mawiała, że to jedno z najlepszych dań z wołowiny, jakie zna ludzkość."
         },
         {
           "name": "Omlette du fromage",
@@ -529,7 +527,6 @@
       }
     }
   },
-{
   "deutschland":{  
     "deutsch": {
       "words": [
@@ -685,9 +682,7 @@
           "places": [
           {
             "name": "Schloss Neuschwanstein",
-            "description": "Niemcy to kraj wielu pięknych zamków, ale Neuschwanstein jest wyjątkowy. Jeśli poprosicie jakieś dziecko na świecie, aby wyobraziło sobie twierdzę, w której mieszka jakaś królewna prawdopodobnie wyobrazi sobie właśnie ten zamek! A wiecie dlaczego? Bo to właśnie tę budowlę znamy z najsłynniejszych kreskówek na świecie – z filmów Disneya. Stanowił on insirację chociażby dla rysowników Królewny Śnieżki.
-              Budowla została zaprojektowana na życzenie dla króla bawarskiego Ludwika II
-              Wittelsbacha. Miała być wyidealizowaną repliką średniowiecznego zamku rycerskiego. Prace budownicze nigdy nie zostały ukończone, jednak mimo to jest jest on najwspanialszym „bajkowym” zamkiem istniejącym w rzeczywistości. Co roku przyjeżdża go obejrzeć ponad miliona turystów.",
+            "description": "Niemcy to kraj wielu pięknych zamków, ale Neuschwanstein jest wyjątkowy. Jeśli poprosicie jakieś dziecko na świecie, aby wyobraziło sobie twierdzę, w której mieszka jakaś królewna prawdopodobnie wyobrazi sobie właśnie ten zamek! A wiecie dlaczego? Bo to właśnie tę budowlę znamy z najsłynniejszych kreskówek na świecie – z filmów Disneya. Stanowił on insirację chociażby dla rysowników Królewny Śnieżki. Budowla została zaprojektowana na życzenie dla króla bawarskiego Ludwika II Wittelsbacha. Miała być wyidealizowaną repliką średniowiecznego zamku rycerskiego. Prace budownicze nigdy nie zostały ukończone, jednak mimo to jest jest on najwspanialszym „bajkowym” zamkiem istniejącym w rzeczywistości. Co roku przyjeżdża go obejrzeć ponad miliona turystów.",
             "img": "https://polskiobserwator.de/wp-content/uploads/2016/07/neu1.jpg"
           },
           {
