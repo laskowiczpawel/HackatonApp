@@ -12,6 +12,7 @@ import { Motion, spring } from "react-motion"
 import map from "../../static/world-50m.json"
 import { wrapperStyles, cities } from "./config";
 import { Modal, Button } from "antd";
+import { Controls } from "./styled"
 
 import { Link } from "react-router-dom";
 
@@ -21,15 +22,15 @@ class AnimatedMap extends Component {
     super();
     this.state = {
       center: [0, 20],
-      zoom: 1
+      zoom: 1,
+      visible: false,
+      country: null
     };
     this.handleZoomIn = this.handleZoomIn.bind(this);
     this.handleZoomOut = this.handleZoomOut.bind(this);
     this.handleCityClick = this.handleCityClick.bind(this);
     this.handleReset = this.handleReset.bind(this);
   }
-
-  state = { visible: false, country: null };
 
   handleOk = e => {
       console.log(e)
@@ -74,19 +75,22 @@ class AnimatedMap extends Component {
     return (
       <div style={wrapperStyles}>
           <Modal
-            title="Basic Modal"
-            width="200"
+            title={this.state.country}
+            width={500}
             visible={this.state.visible}
+            footer={null}
             onOk={this.handleOk}
             onCancel={this.handleCancel}>
-                    <p>{this.state.country}</p>
-                    <Link to={`/quiz/${this.state.country}`}>Zacznij quiz</Link>
+                    <p>Do you wany to start a quiz about {this.state.country}?</p>
+                    <Link to={`/quiz/${this.state.country}`}>Begin quiz</Link>
 
             </Modal>
-      
-        <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
-        <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
-        <button onClick={this.handleReset}>{"Reset"}</button>
+        <Controls>
+            <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
+            <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
+            <button onClick={this.handleReset}>{"Reset"}</button>
+        </Controls>
+
         <Motion
           defaultStyle={{
             zoom: 1,

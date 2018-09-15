@@ -1,8 +1,13 @@
 
 export const wrapperStyles = {
-    width: "100%",
-    maxWidth: 980,
-    margin: "0 auto",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    overflow: "hidden",
+    boxShadow: "inset 0px 0px 63px 9px rgba(0,0,0,0.75)"
+
 }
 
 export const cities = [
